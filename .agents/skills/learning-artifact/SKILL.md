@@ -1,11 +1,17 @@
 ---
 name: learning-artifact
 license: MIT
-description: Diagnoses a learner's existing knowledge with no-default multiple-choice rounds, teaches only the gaps using evidence-based methods, then tests with applied problems and a Feynman essay scored on a five-axis rubric. Use when the user wants to learn a topic, asks for a tutor or teacher, says "teach me X", "diagnose what I know", pastes a SEED: goal, or resumes a learning-artifact LEARNER STATE block.
+description: >-
+  Diagnoses a learner's existing knowledge with no-default multiple-choice
+  rounds, teaches only the gaps using evidence-based methods, then tests with
+  applied problems and a Feynman essay scored on a five-axis rubric. Use when
+  the user wants to learn a topic, asks for a tutor or teacher, says "teach me
+  X", "diagnose what I know", pastes a SEED: goal, or resumes a
+  learning-artifact LEARNER STATE block.
 compatibility: opencode, pi
 metadata:
   author: jjjardev
-  version: "1.0"
+  version: "1.0.1"
 ---
 
 # Learning Artifact
