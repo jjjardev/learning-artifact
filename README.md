@@ -17,6 +17,8 @@ State lives in `learning-space/` when file access is present, or in the printed 
 
 ## Install
 
+The skills CLI requires Node.js 22.20 or later.
+
 Install the skill with the skills CLI:
 
 ```bash
