@@ -1,8 +1,8 @@
-# learning-artifact
+# Learning Artifact
 
 [![skills.sh](https://skills.sh/b/jjjardev/learning-artifact)](https://skills.sh/jjjardev/learning-artifact)
 
-An Agent Skill that diagnoses what a learner actually knows, teaches only the gaps, then tests understanding with applied problems and a Feynman essay scored on a five-axis rubric.
+Learning Artifact is an Agent Skill that diagnoses what a learner actually knows, teaches only the gaps, then tests understanding with applied problems and a Feynman essay scored on a five-axis rubric.
 
 Built for opencode and pi first. Works in any host that implements the [Agent Skills specification](https://agentskills.io/specification).
 
@@ -17,11 +17,13 @@ State lives in `learning-space/` when file access is present, or in the printed 
 
 ## Install
 
+Install the skill with the skills CLI:
+
 ```bash
 npx skills add jjjardev/learning-artifact
 ```
 
-Install globally:
+Install it globally:
 
 ```bash
 npx skills add jjjardev/learning-artifact -g
@@ -59,12 +61,22 @@ SEED: linear algebra for graphics programming
 
 Resume by pasting a `LEARNER STATE` block, pointing at an existing `learning-space/` folder, or starting a fresh session in the same project.
 
+## Plain-chat prompt
+
+For a chat interface without skill support, paste [`prompts/learning-artifact.md`](prompts/learning-artifact.md) as the first message and add a `SEED:` line.
+
 ## Repository layout
 
 ```text
-.agents/skills/learning-artifact/SKILL.md   the skill
-learning-artifact.prompt.md                 legacy single-file prompt for plain chat
+.agents/skills/learning-artifact/SKILL.md   the Agent Skill
+prompts/learning-artifact.md                the portable plain-chat prompt
 ```
+
+## Compatibility
+
+- opencode: loads the skill from `.agents/skills/` or through the `skill` tool.
+- pi: loads the skill from `.agents/skills/` or by `/skill:learning-artifact`.
+- Other Agent Skills hosts: install under their standard skills directory.
 
 ## License
 
